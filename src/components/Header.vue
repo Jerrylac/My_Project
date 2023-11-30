@@ -21,6 +21,11 @@ export default {
     <RouterLink to="/about" class="link">About</RouterLink>
     
   </div>
+  <div class="left">
+
+
+  </div>
+
 </template>
 
 <style scoped lang="scss">
@@ -62,20 +67,17 @@ export default {
       font-size: 45px;
     }
   }
+  .fa-house {
+    font-size: 50px;
+    color: #6d5d6e;
 }
-.fa-house {
-  font-size: 50px;
-  color: #6d5d6e;
 }
-// a{
-//     margin-top: 500px;
-// }
-// a.router-link-exact-active {
-//   color: #3e065f;
-//   font-weight: bold;
-//   background-color: #f4eee0;
-//   box-shadow: 3px 5px 1px black;
-// }
 
-
+.left{
+  width: 10vmax;
+  height: 100vh;
+  background-color: black;
+  position: fixed;
+  z-index: 0;
+}
 </style>
