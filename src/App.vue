@@ -6,20 +6,21 @@ import Header from "./components/Header.vue";
 
 </script>
 <script>
-export default{
-    data(){
-        return{
-            loader:"loader",
-            stop:"stop"
-        }
-    },
-    mounted(){
-        setTimeout(()=>{
-            this.loader=this.stop
-        },5000)
+  export default{
+      data(){
+          return{
+              loader:"loader",
+              stop:"stop"
+          }
+      },
+      mounted(){
+          setTimeout(()=>{
+              this.loader=this.stop
+          },5000)
+        
+      },
+  }
 
-    },
-}
 </script>
 
 <template>

@@ -12,6 +12,7 @@ export default {
 
 <template>
   <div class="headerShow">
+    <i class="fa-solid fa-bars"></i>
     <RouterLink to="/" class="link"
       ><i class="fa-solid fa-house"></i
     ></RouterLink>
@@ -34,6 +35,11 @@ export default {
   margin-top: 20px;
   font-size: 50px;
   color: #6d5d6e;
+}
+.fa-bars{
+  font-size: 50px;
+  margin-top: 25px;
+  margin-left: 30px;
 }
 a.router-link-exact-active {
   color: #3e065f;
