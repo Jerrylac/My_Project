@@ -257,7 +257,7 @@ padding-left: 7vmin;
   .flip1 {
     position: relative;
     display: inline-block;
-    width: 45vmin;
+    width: 40vmin;
     .front,
     .back {
       box-shadow: 5px 5px 5px black;
