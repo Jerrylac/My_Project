@@ -3,24 +3,22 @@ import { RouterLink, RouterView } from "vue-router";
 import Header from "./components/Header.vue";
 
 
-
 </script>
 <script>
-  export default{
-      data(){
-          return{
-              loader:"loader",
-              stop:"stop"
-          }
-      },
-      mounted(){
-          setTimeout(()=>{
-              this.loader=this.stop
-          },5000)
-        
-      },
-  }
-
+export default{
+    data(){
+        return{
+            loader:"loader",
+            stop:"stop"
+        }
+    },
+    mounted(){
+        setTimeout(()=>{
+            this.loader=this.stop
+        },5000)
+      
+    },
+}
 </script>
 
 <template>
@@ -50,7 +48,7 @@ import Header from "./components/Header.vue";
 <style scoped lang="scss">
 .header {
   width: 100vmax;
-  height: 15vh;
+  height: 14vh;
   position: fixed;
   top: 0px;
   z-index: 5;
@@ -61,7 +59,7 @@ import Header from "./components/Header.vue";
   height: 100vmax;
   background-color: #ACB1D6;
   .contentBox{
-    margin-top: 105px;
+    margin-top: 110px;
   }
 }
 
@@ -145,7 +143,7 @@ $topenter: -10px;
     width: 100%;
     height: 100%;
   position: fixed;
-  z-index: 5;
+  z-index: 4;
   background-color: black;
   display: flex;
   justify-content: center;
