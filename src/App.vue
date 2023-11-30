@@ -48,7 +48,7 @@ export default{
 <style scoped lang="scss">
 .header {
   width: 100vmax;
-  height: 14vh;
+  height: 8vh;
   position: fixed;
   top: 0px;
   z-index: 5;
@@ -59,7 +59,7 @@ export default{
   height: 100vmax;
   background-color: #ACB1D6;
   .contentBox{
-    margin-top: 110px;
+    margin-top: 9vmin;
   }
 }
 

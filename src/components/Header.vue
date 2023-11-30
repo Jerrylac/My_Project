@@ -76,7 +76,7 @@ export default {
 .left{
   width: 10vmax;
   height: 100vh;
-  background-color: black;
+  background-color: rgb(91, 86, 86);
   position: fixed;
   z-index: 0;
 }
