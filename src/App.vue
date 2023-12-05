@@ -9,7 +9,8 @@ export default{
     data(){
         return{
             loader:"loader",
-            stop:"stop"
+            stop:"stop",
+            page:false
         }
     },
     mounted(){
@@ -18,15 +19,21 @@ export default{
         },5000)
       
     },
+    methods:{
+      getChPage(xxx){
+        this.page=xxx
+        // console.log(this.page);
+      }
+    }
 }
 </script>
 
 <template>
   <div class="header">
-    <Header />
+    <Header @pageCh="getChPage" />
   </div>
   <div class="del"></div>
-  <div class="content">
+  <div class="content" v-if="page==false">
     <div :class="loader">
     <div class="box">
         <div class="square" ></div>
@@ -41,6 +48,27 @@ export default{
     </div>
 </div>
 <div class="contentBox">
+  <RouterView />
+</div>
+  </div>
+  <div class="content1" v-else>
+    <div :class="loader">
+    <div class="box">
+        <div class="square" ></div>
+        <div class="square"></div>
+        <div class="square last"></div>
+        <div class="square clear"></div>
+        <div class="square"></div>
+        <div class="square last"></div>
+        <div class="square clear"></div>
+        <div class="square "></div>
+        <div class="square last"></div>
+    </div>
+</div>
+<div class="contentBox" v-if="page==false">
+  <RouterView />
+</div>
+<div class="contentBox1" v-else>
   <RouterView />
 </div>
   </div>
@@ -63,11 +91,21 @@ export default{
 .content {
   margin-left: auto;
   padding-top: 0.1vmin;
-  width: 89vw;
+  width: 94vw;
   height: 200vmin;
   background-color: #ACB1D6;
   .contentBox{
     margin-top: 8vmin;
+  }
+}
+.content1 {
+  margin-left: auto;
+  padding-top: 0.1vmin;
+  width: 84vw;
+  height: 200vmin;
+  background-color: #ACB1D6;
+  .contentBox{
+    margin-top: 10vmin;
   }
 }
 

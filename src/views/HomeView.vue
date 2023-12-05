@@ -103,12 +103,12 @@
   }
 .flipBoxT{
   width: 85vw;
-  height: 100vmin;
+  height: 85vmin;
 // background-color: azure;
 // padding-left: 7vmin;
   .flip {
     margin-top: 50px;
-    margin-left: 15vmin;
+    margin-left: 11vmin;
     position: relative;
     .front,
     .back {
@@ -122,9 +122,21 @@
         overflow-y: scroll;
         
       }
-      // .text::-webkit-scrollbar{
-      //   width: 50px;
-      // }
+      .text::-webkit-scrollbar{
+        width: 10px;
+      }
+      .text::-webkit-scrollbar-track {
+        background: #3b73b8;
+        border-radius: 10px;
+      }
+      .text::-webkit-scrollbar-thumb {
+        background: #aec3d7;
+        border-radius: 10px;
+      }
+      .text::-webkit-scrollbar-thumb:hover {
+  background: #fff;
+}
+
     }
     .front {
       transform: rotateY(0deg);
@@ -164,23 +176,25 @@
   .flip {
     position: relative;
     display: inline-block;
-    width: 45vmin;
+    width: 42vmin;
     .front,
     .back {
       box-shadow: 5px 5px 5px black;
       display: block;
       color: white;
-      width: inherit;
+      width: 50vmin;
       background-size: cover !important;
       background-position: center !important;
       height: 80vmin;
       padding: 1em 2em;
       background: #313131;
       border-radius: 10px;
+      background-color: #8CABFF;
       p {
-        font-size: 0.9125rem;
+        font-size: 1rem;
         line-height: 160%;
-        color: #999;
+        color: #181414;
+        font-weight: bold;
       }
     }
     .workI{
@@ -233,8 +247,8 @@
 
 .flipBox{
   
-  margin-left: 15vmin;
-  width:110vmin;
+  margin-left: 13vmin;
+  width:100vmin;
   height: 60vmin;
   border-bottom: 2px solid black;
   // background-color: #fff;

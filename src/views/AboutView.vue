@@ -43,8 +43,8 @@ function aaa(){
       <div class="data">
         <div class="content">
           <span class="author">Jane Doe</span>
-          <h1 class="title"><a href="#">Boxing icon has the will for a couple more fights</a></h1>
-          <p class="text">The highly anticipated world championship fight will take place at 10am and is the second major boxing blockbuster in the nation after 43 years.</p>
+          <h1 class="title"><a href="https://joyful-frangipane-5bec0b.netlify.app/" target="_blank">上課以及作品連結</a></h1>
+          
           <!-- <label for="show-menu" class="menu-button"><span></span></label> -->
         </div>
         <!-- <input type="checkbox" id="show-menu" /> -->
@@ -58,6 +58,7 @@ function aaa(){
       </div>
     </div>
   </div>
+
 
 </template>
 
