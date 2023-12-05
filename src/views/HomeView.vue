@@ -23,11 +23,11 @@
         </div>
       </div>
       <div class="back">
-        <h2>Angular</h2>
-        <p>
-          Good tools make application development quicker and easier to maintain
-          than if you did everything by hand..
-        </p>
+        <div class="text">
+          <h2>Angular</h2>
+          <p>我畢業於樹德科技大學在學期間中參加過學生會在其中擔任過活動的組長，課餘期間有時也會去學習不同的東西，在工作期間我負責的職務快速的處理完畢，若是有心人也會去教導他們怎麼快速的操作</p>
+          <hr>
+        </div>
       </div>
     </div>
     <div class="flip">
@@ -39,11 +39,29 @@
         </div>
       </div>
       <div class="back">
-        <h2>Angular</h2>
+        <div class="text">
+          <h4>學歷</h4>
         <p>
-          Good tools make application development quicker and easier to maintain
-          than if you did everything by hand..
+          大學:樹德科技⼤學
         </p>
+          <p>
+            學系:資訊管理
+          </p>
+          <p>
+            畢業時間:2021年6⽉
+          </p>
+          <h5>在學期間:</h5>
+          <p>參加學⽣會活動的組⻑活動⾏中學到團隊構的重性</p>
+          <hr>
+          <h4>進修經歷</h4>
+          <p>瑋育TibaMe就業養成班THM101</p>
+          <p>微軟全端開發養成</p>
+          <p>2023年2月~6月</p>
+          <p>進修期間學習JavaScript、CSS、HTML、bootstrap、vue、C#、ASP.NET MVC以及MS SQL的操作</p>
+          <p>bootstrap以及vue是使用cdn的方式操作</p>
+          <p>-----------------</p>
+        </div>
+        
       </div>
     </div>
     <div class="flip">
@@ -60,11 +78,16 @@
       </div>
       </div>
       <div class="back">
-        <h2>Angular</h2>
-        <p>
-          Good tools make application development quicker and easier to maintain
-          than if you did everything by hand..
-        </p>
+        <div class="text">
+          <h4>工作經歷</h4>
+          <p>
+            康洋生技國際有限公司|客服人員
+          </p>
+          <p>2020/9 –2023/7</p>
+          <h5>工作內容</h5>
+          <p>協助客人訂單上的問題系統</p>
+          <p>出現問題時及時聯繫技術處理該問題</p>
+        </div>
       </div>
     </div>
 
@@ -79,14 +102,13 @@
     text-shadow: 0px 0px 5px white;
   }
 .flipBoxT{
-  width: 100vw;
-height: 100vmin;
+  width: 85vw;
+  height: 100vmin;
 // background-color: azure;
-padding-left: 7vmin;
+// padding-left: 7vmin;
   .flip {
     margin-top: 50px;
-    margin-left: 20vmin;
-  
+    margin-left: 15vmin;
     position: relative;
     .front,
     .back {
@@ -94,6 +116,15 @@ padding-left: 7vmin;
       transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
       transition-duration: 0.5s;
       transition-property: transform, opacity;
+      .text{
+        width: 100%;
+        height: 100%;
+        overflow-y: scroll;
+        
+      }
+      // .text::-webkit-scrollbar{
+      //   width: 50px;
+      // }
     }
     .front {
       transform: rotateY(0deg);
@@ -202,14 +233,14 @@ padding-left: 7vmin;
 
 .flipBox{
   
-  margin-left: 20vmin;
-  width:200vmin;
+  margin-left: 15vmin;
+  width:110vmin;
   height: 60vmin;
   border-bottom: 2px solid black;
   // background-color: #fff;
   .flip1 {
     margin-top: 50px;
-    margin-left: 10vmin;
+    // margin-left: 10vmin;
   
     position: relative;
     .front,

@@ -25,6 +25,7 @@ export default{
   <div class="header">
     <Header />
   </div>
+  <div class="del"></div>
   <div class="content">
     <div :class="loader">
     <div class="box">
@@ -53,13 +54,20 @@ export default{
   top: 0px;
   z-index: 5;
 }
+.del{
+  width: 100%;
+  height: 8vmin;
+  margin-bottom: 0px;
+  background-color: #ACB1D6;
+}
 .content {
-  
-  width: 100vw;
-  height: 100vmax;
+  margin-left: auto;
+  padding-top: 0.1vmin;
+  width: 89vw;
+  height: 200vmin;
   background-color: #ACB1D6;
   .contentBox{
-    margin-top: 9vmin;
+    margin-top: 8vmin;
   }
 }
 
@@ -140,8 +148,9 @@ $topenter: -10px;
 
 
 .loader{
-    width: 100%;
+    width: 90%;
     height: 100%;
+    margin-left: auto;
   position: fixed;
   z-index: 4;
   background-color: black;
@@ -185,8 +194,8 @@ $topenter: -10px;
 .square:nth-child(6){
   @include delay(5 * $delayenter);
 }
-.square:nth-child(7){
-  }
+// .square:nth-child(7){
+//   }
 .square:nth-child(8){
   @include delay(1 * $delayenter);
 }
