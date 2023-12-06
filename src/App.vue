@@ -93,7 +93,7 @@ export default{
   padding-top: 0.1vmin;
   width: 94vw;
   height: 200vmin;
-  background-color: #ACB1D6;
+  background-color: #512B81;
   .contentBox{
     margin-top: 8vmin;
   }
@@ -103,7 +103,7 @@ export default{
   padding-top: 0.1vmin;
   width: 84vw;
   height: 200vmin;
-  background-color: #ACB1D6;
+  background-color: #512B81;
   .contentBox{
     margin-top: 10vmin;
   }
@@ -186,7 +186,7 @@ $topenter: -10px;
 
 
 .loader{
-    width: 90%;
+    width: 95%;
     height: 100%;
     margin-left: auto;
   position: fixed;

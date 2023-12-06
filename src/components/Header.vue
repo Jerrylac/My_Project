@@ -69,7 +69,7 @@ export default {
 .headerShow {
   width: 100%;
   height: 100%;
-  background-color: #DBDFEA;
+  background-color: #35155D;
   font-size: 30px;
   display: flex;
   align-items: center;
@@ -110,7 +110,8 @@ export default {
 .left{
   width: 5vmax;
   height: 100vh;
-  background-color: rgb(91, 86, 86);
+  background-color:#35155D;
+  border-top: 3px solid black;
   position: fixed;
   font-size: 30px;
   z-index: 0;
@@ -141,7 +142,8 @@ export default {
 .left-bg{
   width: 15vmax;
   height: 100vh;
-  background-color: rgb(91, 86, 86);
+  background-color:#35155D;
+  border-top: 3px solid black;
   position: fixed;
   font-size: 30px;
   z-index: 0;

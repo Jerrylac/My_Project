@@ -7,10 +7,10 @@
       <div class="front" style="
           background-image: url(https://media.discordapp.net/attachments/483550384133111808/1166774573275029616/chihuahua-smile.gif?ex=654bb67f&is=6539417f&hm=78c84357c72c0e87d184405d55ab6b876b443a192adb97ad1e85f97f3715a7e1&);
         ">
-        <h1 class="text-shadow">預定照片</h1>
+        <!-- <h1 class="text-shadow">預定照片</h1> -->
       </div>
-      <div class="back">
-        <p>預定照片</p>
+      <div class="back" style="background-image: url(https://media4.giphy.com/media/TcdpZwYDPlWXC/giphy.gif);">
+        <!-- <p>預定照片</p> -->
       </div>
     </div>
   </div>
@@ -23,11 +23,11 @@
         </div>
       </div>
       <div class="back">
-        <div class="text">
+        
           <h2>Angular</h2>
           <p>我畢業於樹德科技大學在學期間中參加過學生會在其中擔任過活動的組長，課餘期間有時也會去學習不同的東西，在工作期間我負責的職務快速的處理完畢，若是有心人也會去教導他們怎麼快速的操作</p>
           <hr>
-        </div>
+        
       </div>
     </div>
     <div class="flip">
@@ -78,7 +78,7 @@
       </div>
       </div>
       <div class="back">
-        <div class="text">
+        
           <h4>工作經歷</h4>
           <p>
             康洋生技國際有限公司|客服人員
@@ -87,7 +87,7 @@
           <h5>工作內容</h5>
           <p>協助客人訂單上的問題系統</p>
           <p>出現問題時及時聯繫技術處理該問題</p>
-        </div>
+        
       </div>
     </div>
 
@@ -189,11 +189,11 @@
       padding: 1em 2em;
       background: #313131;
       border-radius: 10px;
-      background-color: #8CABFF;
+      background-color: #4D3C77;
       p {
         font-size: 1rem;
         line-height: 160%;
-        color: #181414;
+        color: white;
         font-weight: bold;
       }
     }
