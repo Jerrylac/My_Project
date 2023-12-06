@@ -23,10 +23,11 @@
         </div>
       </div>
       <div class="back">
-        
-          <h2>Angular</h2>
-          <p>我畢業於樹德科技大學在學期間中參加過學生會在其中擔任過活動的組長，課餘期間有時也會去學習不同的東西，在工作期間我負責的職務快速的處理完畢，若是有心人也會去教導他們怎麼快速的操作</p>
-          <hr>
+          <div class="text1">
+            <h2>Angular</h2>
+            <p>我畢業於樹德科技大學在學期間中參加過學生會在其中擔任過活動的組長，課餘期間有時也會去學習不同的東西，在工作期間我負責的職務快速的處理完畢，若是有心人也會去教導他們怎麼快速的操作</p>
+            <hr>
+          </div>
         
       </div>
     </div>
@@ -78,7 +79,7 @@
       </div>
       </div>
       <div class="back">
-        
+        <div class="text1">
           <h4>工作經歷</h4>
           <p>
             康洋生技國際有限公司|客服人員
@@ -87,6 +88,7 @@
           <h5>工作內容</h5>
           <p>協助客人訂單上的問題系統</p>
           <p>出現問題時及時聯繫技術處理該問題</p>
+        </div>
         
       </div>
     </div>
@@ -102,13 +104,13 @@
     text-shadow: 0px 0px 5px white;
   }
 .flipBoxT{
-  width: 85vw;
+  width: 200vmin;
   height: 85vmin;
 // background-color: azure;
 // padding-left: 7vmin;
   .flip {
     margin-top: 50px;
-    margin-left: 11vmin;
+    margin-left: 12vmin;
     position: relative;
     .front,
     .back {
@@ -176,7 +178,7 @@
   .flip {
     position: relative;
     display: inline-block;
-    width: 42vmin;
+    width: 45vmin;
     .front,
     .back {
       box-shadow: 5px 5px 5px black;
@@ -189,9 +191,9 @@
       padding: 1em 2em;
       background: #313131;
       border-radius: 10px;
-      background-color: #4D3C77;
+      background-color: #31599d;
       p {
-        font-size: 1rem;
+        font-size: 2vmin;
         line-height: 160%;
         color: white;
         font-weight: bold;
@@ -228,7 +230,7 @@
       }
     }
     .userT{
-      margin-top: 50%;
+      margin-top: 21vmin;
       .fa-user-large{
         font-size: 5vmin;
         display: flex;
@@ -253,7 +255,7 @@
   border-bottom: 2px solid black;
   // background-color: #fff;
   .flip1 {
-    margin-top: 50px;
+    margin-top: 5vmin;
     // margin-left: 10vmin;
   
     position: relative;
@@ -324,4 +326,61 @@
   }
 
 }
+
+@media screen and (max-width: 912px){
+  .flipBox{
+    width:50vmin;
+    height: 40vmin;
+    .flip1 {
+    width: 30vmin;
+    .front,
+    .back {
+      height: 30vmin;
+    }
+    }
+  }
+  .flipBoxT{
+    margin-left: 15vmin;
+    width: 50vmin;
+    .flip {
+      width: 24vmin;
+      .front,
+      .back {
+        height: 30vmin;
+        p{
+          font-size: 3vmin;
+        }
+      }
+      .userT{
+        margin-top: 10vmin;
+      }
+      .workI{
+        margin-top: 10vmin;
+      }
+      .bockT{
+        margin-top: 10vmin;
+      }
+      }
+      .text1{
+        width: 100%;
+        height: 100%;
+        overflow-y: scroll;
+      }
+      .text1::-webkit-scrollbar{
+        width: 10px;
+      }
+      .text1::-webkit-scrollbar-track {
+        background: #3b73b8;
+        border-radius: 10px;
+      }
+      .text1::-webkit-scrollbar-thumb {
+        background: #aec3d7;
+        border-radius: 10px;
+      }
+      .text1::-webkit-scrollbar-thumb:hover {
+  background: #fff;
+}
+  }
+}
+
 </style>

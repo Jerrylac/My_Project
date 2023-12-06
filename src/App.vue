@@ -91,7 +91,7 @@ export default{
 .content {
   margin-left: auto;
   padding-top: 0.1vmin;
-  width: 94vw;
+  width: 200vmin;
   height: 200vmin;
   background-color: #512B81;
   .contentBox{
@@ -186,8 +186,8 @@ $topenter: -10px;
 
 
 .loader{
-    width: 95%;
-    height: 100%;
+    width: 200vmin;
+    height: 100vmin;
     margin-left: auto;
   position: fixed;
   z-index: 4;
@@ -250,6 +250,16 @@ $topenter: -10px;
   .square {
     -webkit-animation: none; // 关闭动画
     animation: none; // 关闭动画
+  }
+}
+
+@media screen and (max-width: 912px){
+  .content{
+    width: 90vmin;
+  }
+  .loader{
+    width: 100vmin;
+    height: 145vmin;
   }
 }
 

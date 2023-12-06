@@ -31,30 +31,15 @@ function aaa(){
 </script>
 
 <template>
-    <!-- <button id="ddd" @click="aaa()">123</button> -->
 
     <div class="example-1 card">
     <div class="wrapper">
-      <!-- <div class="date">
-        <span class="day">12</span>
-        <span class="month">Aug</span>
-        <span class="year">2016</span>
-      </div> -->
       <div class="data">
         <div class="content">
           <span class="author">Jane Doe</span>
           <h1 class="title"><a href="https://joyful-frangipane-5bec0b.netlify.app/" target="_blank">上課以及作品連結</a></h1>
           
-          <!-- <label for="show-menu" class="menu-button"><span></span></label> -->
         </div>
-        <!-- <input type="checkbox" id="show-menu" /> -->
-        <!-- <ul class="menu-content">
-          <li>
-            <a href="#" class="fa fa-bookmark-o"></a>
-          </li>
-          <li><a href="#" class="fa fa-heart-o"><span>47</span></a></li>
-          <li><a href="#" class="fa fa-comment-o"><span>8</span></a></li>
-        </ul> -->
       </div>
     </div>
   </div>
@@ -264,6 +249,13 @@ h1 {
     span {
       top: -10px;
     }
+  }
+}
+
+@media screen and (max-width: 912px){
+  .card{
+    width: 50vmin;
+    margin-left: 25vmin;
   }
 }
 

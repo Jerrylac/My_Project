@@ -76,14 +76,14 @@ export default {
   padding-top: 10px;
     padding-left: 30px;
   .faBox{
-    width: 3vw;
-    height: 7vh;
+    width: 7vmin;
+    height: 6vmin;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
     .fa-bars{
-      font-size: 50px;
+      font-size: 6vmin;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -92,24 +92,24 @@ export default {
     }
   }
   .faBox:hover{
-    width: 3vw;
-    height: 6vh;
+    width: 7vmin;
+    height: 6vmin;
     background-color: black;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    opacity: 0.1;
+    opacity: 0.5;
     .fa-bars{
-      font-size: 35px;
+      font-size: 5vmin;
     }
   }
   
 }
 
 .left{
-  width: 5vmax;
-  height: 100vh;
+  width: 7vmax;
+  height: 100vmin;
   background-color:#35155D;
   border-top: 3px solid black;
   position: fixed;
@@ -122,13 +122,13 @@ export default {
     .fa-wand-magic-sparkles{
       margin-top: 5%;
       margin-left: 10%;
-      font-size: 40px;
+      font-size: 6vmin;
       color: #F0ECE5;
     }
     .fa-house {
       margin-top: 5%;
       margin-left: 10%;
-      font-size: 40px;
+      font-size: 6vmin;
       color: #F0ECE5;
     }&:hover{
     opacity: 0.5;
@@ -162,13 +162,13 @@ export default {
     .fa-wand-magic-sparkles{
       margin-top: 5%;
       margin-left: 10%;
-      font-size: 40px;
+      font-size: 6vmin;
       color: #F0ECE5;
     }
     .fa-house {
       margin-top: 5%;
       margin-left: 10%;
-      font-size: 40px;
+      font-size: 6vmin;
       color: #F0ECE5;
     }&:hover{
     opacity: 0.5;
@@ -176,7 +176,22 @@ export default {
     p{
       margin-top: 10px;
       cursor: pointer;
-      font-size: 20px;
+      font-size: 5vmin;
+    }
+  }
+}
+
+@media screen and (max-width: 912px){
+  .left{
+    width: 10vmin;
+    height: 150vmin;
+  }
+  .left-bg{
+    height: 160vmin;
+    .box1{
+      p{
+        font-size: 4vmin;
+      }
     }
   }
 }
