@@ -56,12 +56,12 @@ export default {
         <!-- <p>作品</p> -->
       </RouterLink>
     </div>
-    <div class="box1">
+    <!-- <div class="box1">
       <RouterLink to="/test" class="link">
         <i class="fa-solid fa-wand-magic-sparkles"></i>
         <p>作品</p>
       </RouterLink>
-    </div>
+    </div> -->
     
 
   </div>
