@@ -87,7 +87,8 @@ h1 {
 .card {
   float: left;
   padding: 0 1.7rem;
-  width: 40%;
+  width: 108vmin;
+  margin-left: 20vmin;
   .menu-content {
     @include cf;
     margin: 0;
@@ -111,7 +112,8 @@ h1 {
   }
   .wrapper {
     background-color: $white;
-    min-height: 540px;
+    width: 100vmin;
+    height: 60vmin;
     position: relative;
     overflow: hidden;
     box-shadow: 0 19px 38px rgba($black, 0.3), 0 15px 12px rgba($black, 0.2);
@@ -154,7 +156,7 @@ h1 {
 // First example styles
 .example-1 {
   .wrapper {
-    background: url(https://media.discordapp.net/attachments/483550384133111808/1166774573275029616/chihuahua-smile.gif?ex=654bb67f&is=6539417f&hm=78c84357c72c0e87d184405d55ab6b876b443a192adb97ad1e85f97f3715a7e1&) 20% 1% / cover no-repeat;
+    background: url(https://media4.giphy.com/media/TcdpZwYDPlWXC/giphy.gif) 10% 5% / cover no-repeat;
   }
   .date {
     position: absolute;
@@ -254,9 +256,24 @@ h1 {
 
 @media screen and (max-width: 912px){
   .card{
-    width: 50vmin;
-    margin-left: 25vmin;
+    width: 65vmin;
+    margin-left: 5vmin;
+  }
+  .wrapper{
+      width:  10vmin;
+      height: 60vmin;
+      margin-left: 0px;
+    }
+}
+@media screen and (max-width: 412px){
+  .card{
+    width: 73vmin;
+    margin-left: 1vmin;
+    .wrapper{
+      width:  60vmin;
+      height: 60vmin;
+      margin-left: 0px;
+    }
   }
 }
-
 </style>

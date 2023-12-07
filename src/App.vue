@@ -101,7 +101,7 @@ export default{
 .content1 {
   margin-left: auto;
   padding-top: 0.1vmin;
-  width: 84vw;
+  width: 181vmin;
   height: 200vmin;
   background-color: #512B81;
   .contentBox{
@@ -260,6 +260,24 @@ $topenter: -10px;
   .loader{
     width: 100vmin;
     height: 145vmin;
+  }
+}
+@media screen and (max-width: 412px){
+  .header{
+    height: 9vmin;
+  }
+  .content{
+    width: 100vmin;
+    height: 214vmin;
+  }
+  .content1{
+    margin-top: 9vmin;
+    width: 75vmin;
+    height: 214vmin;
+  }
+  .loader{
+    width: 90vmin;
+    height: 214vmin;
   }
 }
 

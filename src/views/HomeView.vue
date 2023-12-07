@@ -24,7 +24,7 @@
       </div>
       <div class="back">
           <div class="text1">
-            <h2>Angular</h2>
+            <h2>自我介紹</h2>
             <p>我畢業於樹德科技大學在學期間中參加過學生會在其中擔任過活動的組長，課餘期間有時也會去學習不同的東西，在工作期間我負責的職務快速的處理完畢，若是有心人也會去教導他們怎麼快速的操作</p>
             <hr>
           </div>
@@ -65,7 +65,7 @@
         
       </div>
     </div>
-    <div class="flip">
+    <!-- <div class="flip">
       <div
         class="front"
         style="
@@ -91,7 +91,7 @@
         </div>
         
       </div>
-    </div>
+    </div> -->
 
   </div>
   
@@ -340,7 +340,7 @@
     }
   }
   .flipBoxT{
-    margin-left: 15vmin;
+    margin-left: 6vmin;
     width: 50vmin;
     .flip {
       width: 24vmin;
@@ -359,6 +359,57 @@
       }
       .bockT{
         margin-top: 10vmin;
+      }
+      }
+      .text1{
+        width: 100%;
+        height: 100%;
+        overflow-y: scroll;
+      }
+      .text1::-webkit-scrollbar{
+        width: 10px;
+      }
+      .text1::-webkit-scrollbar-track {
+        background: #3b73b8;
+        border-radius: 10px;
+      }
+      .text1::-webkit-scrollbar-thumb {
+        background: #aec3d7;
+        border-radius: 10px;
+      }
+      .text1::-webkit-scrollbar-thumb:hover {
+  background: #fff;
+}
+  }
+}
+
+@media screen and (max-width: 412px){
+  .flipBoxT{
+    margin-left: 15vmin;
+    width: 50vmin;
+    .flip {
+      width: 24vmin;
+      .front,
+      .back {
+        height: 30vmin;
+        p{
+          font-size: 3vmin;
+        }
+      }
+      .userT{
+        margin-top: 5vmin;
+        h1{
+          font-size: 5vmin;
+        }
+      }
+      .workI{
+        margin-top: 5vmin;
+      }
+      .bockT{
+        margin-top: 5vmin;
+        h1{
+          font-size: 5vmin;
+        }
       }
       }
       .text1{

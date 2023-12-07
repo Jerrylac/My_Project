@@ -182,6 +182,9 @@ export default {
 }
 
 @media screen and (max-width: 912px){
+  .headerShow{
+    padding-left: 2vmin;
+  }
   .left{
     width: 10vmin;
     height: 150vmin;
@@ -193,6 +196,19 @@ export default {
         font-size: 4vmin;
       }
     }
+  }
+}
+
+@media screen and (max-width: 412px){
+  .headerShow{
+    padding-left: 2vmin;
+  }
+  .left{
+    width: 10vmin;
+    height: 210vmin;
+  }
+  .left-bg{
+    height: 210vmin;
   }
 }
 
