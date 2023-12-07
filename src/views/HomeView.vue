@@ -27,6 +27,20 @@
             <h2>自我介紹</h2>
             <p>我畢業於樹德科技大學在學期間中參加過學生會在其中擔任過活動的組長，課餘期間有時也會去學習不同的東西，在工作期間我負責的職務快速的處理完畢，若是有心人也會去教導他們怎麼快速的操作</p>
             <hr>
+            <div class="ui-word-replace --spin" style="--_speed:2s;">
+                <span>先等等有好玩的</span>
+                <div>
+                    <ul style="--_length: 7;">
+                        <li style="--_index: 0;">1</li>
+                        <li style="--_index: 1;">2</li>
+                        <li style="--_index: 2;">3</li>
+                        <li style="--_index: 3;">4</li>
+                        <li style="--_index: 4;">5</li>
+                        <li style="--_index: 5;">6</li>
+                        <li style="--_index: 6;" >就這樣沒了</li>
+                    </ul>
+                </div>
+        </div>
           </div>
         
       </div>
@@ -65,7 +79,7 @@
         
       </div>
     </div>
-    <!-- <div class="flip">
+    <div class="flip">
       <div
         class="front"
         style="
@@ -91,10 +105,13 @@
         </div>
         
       </div>
-    </div> -->
+    </div>
 
   </div>
   
+
+  
+
   <!-- <a href="https://mythrillfiction.com/" target="_blank">Mythrill</a> -->
 </template>
 <style scoped lang="scss">
@@ -327,6 +344,97 @@
 
 }
 
+// 會跑動的字>
+.ui-word-replace {
+  --accent: oklch(0.7 0.35 260);
+  container-type: inline-size;
+  margin-left: 5vmin;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  font-size: 14cqi;
+  font-weight: 900;
+  column-gap: .5ch;
+  letter-spacing: -0.03em;
+  line-height: 1.0625;
+  margin-block-end: 1ch;
+  & div {
+    clip-path: inset(2px 0 0 0);
+    height: calc(1lh + 2px);
+    overflow: hidden;
+  }
+  & span {
+    font-size: 4vmin;
+    // background: linear-gradient(90deg,
+	// var(--accent), transparent) repeat-x 
+	// 0% 90% / 150% 10%;
+  }
+  & ul {
+    all: unset;
+    color: var(--accent);
+    display: grid;
+    font-size: 5vmin;
+    & li { list-style: none; }
+  }
+  &.--slide li {
+    animation:
+      slide-word calc(var(--_speed, 1s) * var(--_length, 1))
+      calc(var(--_speed, 1s) * var(--_index, 0)) cubic-bezier(0.075, 0.82, 0.165, 1) infinite;
+    grid-area: 1 / -1;
+    translate: 100% 0;
+  }
+  &.--spin li {
+    animation:
+      spin-word calc(var(--_speed, 1s) * var(--_length, 1))
+      calc(var(--_speed, 1s) * var(--_index, 0)) cubic-bezier(0.075, 0.82, 0.165, 1) infinite;
+    grid-area: 1 / -1;
+    translate: 0 1lh;
+  }
+  &.--step li {
+    animation:
+      step-word calc(var(--_speed, 1s) * var(--_length, 1))
+      steps(var(--_length, 1), jump-none) infinite;
+      overflow: hidden;
+  }
+}
+@keyframes slide-word {
+  12.5% {
+    opacity: 1;
+    translate: 0; 
+  }
+  15% { 
+    opacity: 0;
+  }
+  25% { 
+    opacity: 0;
+    translate: -100% 0;
+  }
+  100% { 
+    opacity: 0;
+  }
+}
+@keyframes spin-word {
+  12.5% {
+    opacity: 1;
+    translate: 0; 
+  }
+  25% { 
+    opacity: 0;
+    translate: 0 -1lh;
+  }
+  100% { 
+    opacity: 0;
+  }
+}
+@keyframes step-word {
+  to { translate: 0 calc((-1lh * var(--_length)) + 1lh); }
+}
+@media (min-width: 450px) {
+  .ui-word-replace { font-size: 8cqi; }
+}
+// 會跑動的字<
+
+
 @media screen and (max-width: 912px){
   .flipBox{
     width:50vmin;
@@ -383,9 +491,9 @@
   }
 }
 
-@media screen and (max-width: 412px){
+@media screen and (max-width: 440px){
   .flipBoxT{
-    margin-left: 15vmin;
+    margin-left: 1vmin;
     width: 50vmin;
     .flip {
       width: 24vmin;

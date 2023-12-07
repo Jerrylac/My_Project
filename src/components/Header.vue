@@ -28,6 +28,18 @@ export default {
     <div class="faBox" @click="chPage">
       <i class="fa-solid fa-bars"></i>
     </div>
+    <!-- <div class="vBox">
+      <div class="line-container">
+        <div class="colorful-line" style="--i: 4"></div>
+        <div class="colorful-line" style="--i: 8"></div>
+        <div class="colorful-line" style="--i: 1"></div>
+        <div class="colorful-line" style="--i: 3"></div>
+        <div class="colorful-line" style="--i: 7"></div>
+        <div class="colorful-line" style="--i: 2"></div>
+        <div class="colorful-line" style="--i: 5"></div>
+        <div class="colorful-line" style="--i: 6"></div>
+      </div>
+    </div> -->
     
     
   </div>
@@ -42,6 +54,12 @@ export default {
       <RouterLink to="/about" class="link">
         <i class="fa-solid fa-wand-magic-sparkles"></i>
         <!-- <p>作品</p> -->
+      </RouterLink>
+    </div>
+    <div class="box1">
+      <RouterLink to="/test" class="link">
+        <i class="fa-solid fa-wand-magic-sparkles"></i>
+        <p>作品</p>
       </RouterLink>
     </div>
     
@@ -104,7 +122,79 @@ export default {
       font-size: 5vmin;
     }
   }
-  
+  .vBox{
+    // width:30vmin;
+    // height: 2vmin;
+    // background-color: #000;
+    margin-top: 2vmin;
+    margin-left: 180vmin;
+    .line-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20vmin;
+  height: 20vmin;
+  // background-color: #fff;
+}
+
+.colorful-line {
+  width: 4vmin;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.4);
+  transform: scale(1);
+  transition: transform 0.2s;
+  animation: flow 4s infinite cubic-bezier(0, 0.57, 1, 0.46);
+  animation-delay: calc(-0.5s * var(--i));
+}
+
+.colorful-line:hover {
+  transform: scale(1.3);
+}
+
+.colorful-line:nth-child(1) {
+  background-color: rgb(250, 215, 220);
+}
+
+.colorful-line:nth-child(2) {
+  background-color: rgb(215, 236, 250);
+}
+
+.colorful-line:nth-child(3) {
+  background-color: rgb(223, 215, 250);
+}
+
+.colorful-line:nth-child(4) {
+  background-color: rgb(250, 215, 249);
+}
+
+.colorful-line:nth-child(5) {
+  background-color: rgb(245, 250, 215);
+}
+
+.colorful-line:nth-child(6) {
+  background-color: rgb(218, 250, 215);
+}
+
+.colorful-line:nth-child(7) {
+  background-color: rgb(215, 220, 250);
+}
+
+.colorful-line:nth-child(8) {
+  background-color: rgb(250, 215, 249);
+}
+
+@keyframes flow {
+  0%,
+  100% {
+    height: 20%;
+    border-radius: 5px;
+  }
+  50% {
+    height: 50%;
+    border-radius: 30px;
+  }
+}
+  }
 }
 
 .left{
@@ -187,7 +277,7 @@ export default {
   }
   .left{
     width: 10vmin;
-    height: 150vmin;
+    height: 300vmin;
   }
   .left-bg{
     height: 160vmin;
@@ -199,13 +289,15 @@ export default {
   }
 }
 
-@media screen and (max-width: 412px){
+@media screen and (max-width: 440px){
   .headerShow{
+    width: 100vmin;
+    height: 10vmin;
     padding-left: 2vmin;
   }
   .left{
     width: 10vmin;
-    height: 210vmin;
+    height: 220vmin;
   }
   .left-bg{
     height: 210vmin;

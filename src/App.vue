@@ -72,6 +72,7 @@ export default{
   <RouterView />
 </div>
   </div>
+  
 </template>
 
 <style scoped lang="scss">
@@ -253,30 +254,42 @@ $topenter: -10px;
   }
 }
 
-@media screen and (max-width: 912px){
+@media screen and (max-width: 768px){
   .content{
-    width: 90vmin;
+    width: 90.5vmin;
+    margin-left: 9.5vmin;
+    padding-left: 6vmin;
+  }
+  .content1{
+    width: 80vmin;
+    margin-left: 20vmin;
   }
   .loader{
     width: 100vmin;
     height: 145vmin;
   }
 }
-@media screen and (max-width: 412px){
+@media screen and (max-width: 440px){
   .header{
     height: 9vmin;
   }
+  .del{
+    width: 80vmin;
+  }
   .content{
-    width: 100vmin;
-    height: 214vmin;
+    width: 90vmin;
+    height: 208vmin;  
+    margin-left: 10vmin;
+    margin-top: 2vmin;
   }
   .content1{
-    margin-top: 9vmin;
-    width: 75vmin;
-    height: 214vmin;
+    margin-top: 2vmin;
+    width: 68vmin;
+    margin-left: 32vmin;
+    height: 206.5vmin;
   }
   .loader{
-    width: 90vmin;
+    width: 80vmin;
     height: 214vmin;
   }
 }
