@@ -161,7 +161,7 @@ h1 {
 // First example styles
 .example-1 {
   .wrapper {
-    background-image: url(https://media4.giphy.com/media/TcdpZwYDPlWXC/giphy.gif);
+    background-image: url(https://media1.tenor.com/m/1IMoSGd3FS4AAAAC/seal-sax.gif);
     background-repeat: no-repeat;
         background-size: 100%;
   }
