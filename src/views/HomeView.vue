@@ -27,7 +27,7 @@
             <h2>自我介紹</h2>
             <p>我是陳彥宇畢業於樹德科技大學在學期間中參加過學生會在其中擔任過活動的組長，課餘期間有時也會去學習不同的東西，在工作期間我負責的職務快速的處理完畢，若是有心人也會去教導他們怎麼快速的操作</p>
             <hr>
-            <div class="ui-word-replace --spin" style="--_speed:2s;">
+            <!-- <div class="ui-word-replace --spin" style="--_speed:2s;">
                 <span>先等等有好玩的</span>
                 <div>
                     <ul style="--_length: 7;">
@@ -40,7 +40,7 @@
                         <li style="--_index: 6;" >就這樣沒了</li>
                     </ul>
                 </div>
-        </div>
+        </div> -->
           </div>
         
       </div>
