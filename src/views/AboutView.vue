@@ -27,7 +27,6 @@ export default{
     <div class="wrapper">
       <div class="data">
         <div class="content">
-          <!-- <span class="author">Jane Doe</span> -->
           <h1 class="title"><a href="https://joyful-frangipane-5bec0b.netlify.app/" target="_blank">上課操作連結</a></h1>
           
         </div>
@@ -52,16 +51,10 @@ export default{
 </template>
 
 <style scoped lang="scss">
-
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
 // Variables
-$regal-blue: #034378;
-$san-juan: #2d4e68;
-$bermuda: #77d7b9;
+
 $white: #fff;
 $black: #000;
-$open-sans: 'Open Sans',
-sans-serif;
 // clear-fix mixin
 @mixin cf {
   &::before,
@@ -77,12 +70,6 @@ a {
   text-decoration: none;
 }
 
-h1 {
-  font-family: $open-sans;
-  font-weight: 300;
-}
-
-
 // Base styles
 .card {
   float: left;
@@ -90,27 +77,6 @@ h1 {
   width: 108vmin;
   margin-left: 20vmin;
   margin-bottom: 20vmin;
-  .menu-content {
-    @include cf;
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    li {
-      display: inline-block;
-    }
-    a {
-      color: $white;
-    }
-    span {
-      position: absolute;
-      left: 50%;
-      top: 0;
-      font-size: 10px;
-      font-weight: 700;
-      font-family: 'Open Sans';
-      transform: translate(-50%, 0);
-    }
-  }
   .wrapper {
     background-color: $white;
     width: 100vmin;
@@ -136,54 +102,17 @@ h1 {
       z-index: 1;
     }
   }
-  .author {
-    font-size: 12px;
-  }
   .title {
     margin-top: 10px;
-  }
-  .text {
-    height: 70px;
-    margin: 0;
-  }
-  input[type='checkbox'] {
-    display: none;
-  }
-  input[type='checkbox']:checked + .menu-content {
-    transform: translateY(-60px);
   }
 }
 
 // First example styles
 .example-1 {
   .wrapper {
-    background-image: url(https://media1.tenor.com/m/1IMoSGd3FS4AAAAC/seal-sax.gif);
+    background-image: url(https://media1.tenor.com/m/qpJ2CXXlE3QAAAAC/%E9%87%8E%E7%8D%A3%E5%85%88%E8%BC%A9-%E5%88%9D%E6%97%A5%E3%81%AE%E5%87%BA%E5%85%88%E8%BC%A9.gif);
     background-repeat: no-repeat;
         background-size: 100%;
-  }
-  .date {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: $bermuda;
-    color: $white;
-    padding: 0.8em;
-    span {
-      display: block;
-      text-align: center;
-    }
-    .day {
-      font-weight: 700;
-      font-size: 24px;
-      text-shadow: 2px 3px 2px rgba($black, 0.18);
-    }
-    .month {
-      text-transform: uppercase;
-    }
-    .month,
-    .year {
-      font-size: 12px;
-    }
   }
   .content {
     background-color: $white;
@@ -194,69 +123,8 @@ h1 {
       color:#35155D;
     }
   }
-  .menu-button {
-    position: absolute;
-    z-index: 999;
-    top: 16px;
-    right: 16px;
-    width: 25px;
-    text-align: center;
-    cursor: pointer;
-    span {
-      width: 5px;
-      height: 5px;
-      background-color: lighten($black, 50%);
-      color: lighten($black, 50%);
-      position: relative;
-      display: inline-block;
-      border-radius: 50%;
-      &::after,
-      &::before {
-        content: '';
-        display: block;
-        width: 5px;
-        height: 5px;
-        background-color: currentColor;
-        position: absolute;
-        border-radius: 50%;
-      }
-      &::before {
-        left: -10px;
-      }
-      &::after {
-        right: -10px;
-      }
-    }
-  }
-  .menu-content {
-    text-align: center;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: -1;
-    transition: transform 0.3s;
-    transform: translateY(0);
-    li {
-      width: 33.333333%;
-      float: left;
-      background-color: $bermuda;
-      height: 60px;
-      position: relative;
-    }
-    a {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      font-size: 24px;
-    }
-    span {
-      top: -10px;
-    }
-  }
 }
-
+//-----------------------------
 
 .container {
 	position: relative;
@@ -332,7 +200,7 @@ h1 {
 .box:hover::after {
 	transform: translateY(0);
 	opacity: 1;
-	transition-delay: 400ms;
+	transition-delay: 50ms;
 }
 
 

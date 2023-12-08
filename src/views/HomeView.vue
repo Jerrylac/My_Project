@@ -345,93 +345,93 @@
 }
 
 // 會跑動的字>
-.ui-word-replace {
-  --accent: oklch(0.7 0.35 260);
-  container-type: inline-size;
-  margin-left: 5vmin;
-  display: flex;
-  flex-wrap: wrap;
-  font-family: ui-sans-serif, system-ui, sans-serif;
-  font-size: 14cqi;
-  font-weight: 900;
-  column-gap: .5ch;
-  letter-spacing: -0.03em;
-  line-height: 1.0625;
-  margin-block-end: 1ch;
-  & div {
-    clip-path: inset(2px 0 0 0);
-    height: calc(1lh + 2px);
-    overflow: hidden;
-  }
-  & span {
-    font-size: 4vmin;
-    // background: linear-gradient(90deg,
-	// var(--accent), transparent) repeat-x 
-	// 0% 90% / 150% 10%;
-  }
-  & ul {
-    all: unset;
-    color: var(--accent);
-    display: grid;
-    font-size: 5vmin;
-    & li { list-style: none; }
-  }
-  &.--slide li {
-    animation:
-      slide-word calc(var(--_speed, 1s) * var(--_length, 1))
-      calc(var(--_speed, 1s) * var(--_index, 0)) cubic-bezier(0.075, 0.82, 0.165, 1) infinite;
-    grid-area: 1 / -1;
-    translate: 100% 0;
-  }
-  &.--spin li {
-    animation:
-      spin-word calc(var(--_speed, 1s) * var(--_length, 1))
-      calc(var(--_speed, 1s) * var(--_index, 0)) cubic-bezier(0.075, 0.82, 0.165, 1) infinite;
-    grid-area: 1 / -1;
-    translate: 0 1lh;
-  }
-  &.--step li {
-    animation:
-      step-word calc(var(--_speed, 1s) * var(--_length, 1))
-      steps(var(--_length, 1), jump-none) infinite;
-      overflow: hidden;
-  }
-}
-@keyframes slide-word {
-  12.5% {
-    opacity: 1;
-    translate: 0; 
-  }
-  15% { 
-    opacity: 0;
-  }
-  25% { 
-    opacity: 0;
-    translate: -100% 0;
-  }
-  100% { 
-    opacity: 0;
-  }
-}
-@keyframes spin-word {
-  12.5% {
-    opacity: 1;
-    translate: 0; 
-  }
-  25% { 
-    opacity: 0;
-    translate: 0 -1lh;
-  }
-  100% { 
-    opacity: 0;
-  }
-}
-@keyframes step-word {
-  to { translate: 0 calc((-1lh * var(--_length)) + 1lh); }
-}
-@media (min-width: 450px) {
-  .ui-word-replace { font-size: 8cqi; }
-}
+// .ui-word-replace {
+//   --accent: oklch(0.7 0.35 260);
+//   container-type: inline-size;
+//   margin-left: 5vmin;
+//   display: flex;
+//   flex-wrap: wrap;
+//   font-family: ui-sans-serif, system-ui, sans-serif;
+//   font-size: 14cqi;
+//   font-weight: 900;
+//   column-gap: .5ch;
+//   letter-spacing: -0.03em;
+//   line-height: 1.0625;
+//   margin-block-end: 1ch;
+//   & div {
+//     clip-path: inset(2px 0 0 0);
+//     height: calc(1lh + 2px);
+//     overflow: hidden;
+//   }
+//   & span {
+//     font-size: 4vmin;
+//     // background: linear-gradient(90deg,
+// 	// var(--accent), transparent) repeat-x 
+// 	// 0% 90% / 150% 10%;
+//   }
+//   & ul {
+//     all: unset;
+//     color: var(--accent);
+//     display: grid;
+//     font-size: 5vmin;
+//     & li { list-style: none; }
+//   }
+//   &.--slide li {
+//     animation:
+//       slide-word calc(var(--_speed, 1s) * var(--_length, 1))
+//       calc(var(--_speed, 1s) * var(--_index, 0)) cubic-bezier(0.075, 0.82, 0.165, 1) infinite;
+//     grid-area: 1 / -1;
+//     translate: 100% 0;
+//   }
+//   &.--spin li {
+//     animation:
+//       spin-word calc(var(--_speed, 1s) * var(--_length, 1))
+//       calc(var(--_speed, 1s) * var(--_index, 0)) cubic-bezier(0.075, 0.82, 0.165, 1) infinite;
+//     grid-area: 1 / -1;
+//     translate: 0 1lh;
+//   }
+//   &.--step li {
+//     animation:
+//       step-word calc(var(--_speed, 1s) * var(--_length, 1))
+//       steps(var(--_length, 1), jump-none) infinite;
+//       overflow: hidden;
+//   }
+// }
+// @keyframes slide-word {
+//   12.5% {
+//     opacity: 1;
+//     translate: 0; 
+//   }
+//   15% { 
+//     opacity: 0;
+//   }
+//   25% { 
+//     opacity: 0;
+//     translate: -100% 0;
+//   }
+//   100% { 
+//     opacity: 0;
+//   }
+// }
+// @keyframes spin-word {
+//   12.5% {
+//     opacity: 1;
+//     translate: 0; 
+//   }
+//   25% { 
+//     opacity: 0;
+//     translate: 0 -1lh;
+//   }
+//   100% { 
+//     opacity: 0;
+//   }
+// }
+// @keyframes step-word {
+//   to { translate: 0 calc((-1lh * var(--_length)) + 1lh); }
+// }
+// @media (min-width: 450px) {
+//   .ui-word-replace { font-size: 8cqi; }
+// }
 // 會跑動的字<
 
 

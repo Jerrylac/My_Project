@@ -29,30 +29,31 @@ export default{
 </script>
 
 <template>
+  <div :class="loader">
+    <div class="box">
+        <div class="square" ></div>
+        <div class="square"></div>
+        <div class="square last"></div>
+        <div class="square clear"></div>
+        <div class="square"></div>
+        <div class="square last"></div>
+        <div class="square clear"></div>
+        <div class="square "></div>
+        <div class="square last"></div>
+    </div>
+</div>
   <div class="header">
     <Header @pageCh="getChPage" />
   </div>
   <div class="del"></div>
   <div class="content" v-if="page==false">
-    <div :class="loader">
-    <div class="box">
-        <div class="square" ></div>
-        <div class="square"></div>
-        <div class="square last"></div>
-        <div class="square clear"></div>
-        <div class="square"></div>
-        <div class="square last"></div>
-        <div class="square clear"></div>
-        <div class="square "></div>
-        <div class="square last"></div>
-    </div>
-</div>
+    
 <div class="contentBox">
   <RouterView />
 </div>
   </div>
   <div class="content1" v-else>
-    <div :class="loader">
+    <!-- <div :class="loader">
     <div class="box">
         <div class="square" ></div>
         <div class="square"></div>
@@ -64,7 +65,7 @@ export default{
         <div class="square "></div>
         <div class="square last"></div>
     </div>
-</div>
+</div> -->
 <div class="contentBox" v-if="page==false">
   <RouterView />
 </div>
@@ -114,8 +115,6 @@ export default{
 $squarew: 15px;
 $squareh: 15px;
 $squaremargin: 5px;
-$loaderw: $squarew * 3 + $squaremargin *2;
-$loaderh: $squareh * 3 + $squaremargin *2;
 $delayenter: 0.3s;
 $topenter: -10px;
 
@@ -187,12 +186,15 @@ $topenter: -10px;
 
 
 .loader{
-    width: 200vmin;
+    width: 215vmin;
     height: 100vmin;
-    margin-left: auto;
+    // margin-left: auto;
   position: fixed;
-  z-index: 4;
-  background-color: black;
+  z-index: 6;
+  // background-color: black;
+  background-image: url(https://media4.giphy.com/media/TcdpZwYDPlWXC/giphy.gif);
+  background-repeat: no-repeat;
+  background-size: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
