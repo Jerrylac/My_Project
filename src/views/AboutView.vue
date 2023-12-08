@@ -82,10 +82,6 @@ h1 {
   font-weight: 300;
 }
 
-.row {
-  max-width: 900px;
-  margin: 50px auto 0;
-}
 
 // Base styles
 .card {
